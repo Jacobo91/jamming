@@ -13,7 +13,7 @@ export const Playlist = (props) => {
         <div className="Playlist">
             <input
                 className='playlist--name'
-                placeholder='Enter Playlist Name'
+                placeholder='New Playlist'
                 defaultValue={props.name}
                 onChange={handleChangeName}
             />

@@ -8,7 +8,7 @@ import Spotify from '../../util/Spotify';
 function App(props) {
 
   const [searchResults, setSearchResults] = useState([])
-  const [playlistName, setPlaylistName] = useState("")
+  const [playlistName, setPlaylistName] = useState("My Playlist")
   const [playlistTracks, setPlayListTracks] = useState([])
 
   function addTrack(track){
@@ -28,7 +28,7 @@ function App(props) {
   function savePlaylist(){
     const trackURIs = playlistTracks.map(playlistTrack => playlistTrack.uri)
     Spotify.savePlaylist(playlistName, trackURIs)
-    setPlaylistName("New Playlist")
+    setPlaylistName("My Playlist")
     setPlayListTracks([])
     console.info(trackURIs)
   }

@@ -2,7 +2,7 @@
 
 
 const clientId = '103de09c7acf4e1193cd13042e15cae9';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'https://chic-sable-4c5ffb.netlify.app';
 const spotifyUrl = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${clientId}&redirect_uri=${redirectUri}`;
 let accessToken = undefined;
 let expiresIn = undefined;

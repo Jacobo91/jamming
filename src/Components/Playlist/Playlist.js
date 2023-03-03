@@ -5,8 +5,8 @@ import { TrackList } from '../TrackList/TrackList'
 
 export const Playlist = (props) => {
 
-    function handleChangeName(e){
-        props.onChangeName(e.target.value)
+    function handleChangeName(event){
+        props.onNameChange(event.target.value)
     }
 
     return(

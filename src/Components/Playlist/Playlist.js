@@ -14,7 +14,7 @@ export const Playlist = (props) => {
             <input
                 className='playlist--name'
                 placeholder='New Playlist'
-                defaultValue={props.name}
+                
                 onChange={handleChangeName}
             />
             <TrackList 
